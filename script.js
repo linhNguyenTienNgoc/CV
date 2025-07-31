@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeScrollEffects();
     initializeSkillBars();
     initializeTypingEffect();
-    initializeParallaxEffect();
     initializeContactForm();
     initializeThemeToggle();
 });
@@ -122,20 +121,6 @@ function initializeTypingEffect() {
     setTimeout(typeWriter, 500);
 }
 
-// Initialize parallax effect
-function initializeParallaxEffect() {
-    window.addEventListener('scroll', () => {
-        const scrolled = window.pageYOffset;
-        const parallaxElements = document.querySelectorAll('.header, .section');
-        
-        parallaxElements.forEach((element, index) => {
-            const speed = 0.5 + (index * 0.1);
-            const yPos = -(scrolled * speed);
-            element.style.transform = `translateY(${yPos}px)`;
-        });
-    });
-}
-
 // Initialize contact form functionality
 function initializeContactForm() {
     // Add click-to-copy functionality for contact items
@@ -152,7 +137,7 @@ function initializeContactForm() {
     });
 }
 
-// Initialize theme toggle (for future use)
+// Initialize theme toggle
 function initializeThemeToggle() {
     // Create theme toggle button
     const themeToggle = document.createElement('button');
@@ -335,65 +320,6 @@ window.addEventListener('load', () => {
     document.head.appendChild(loadingStyle);
 });
 
-// Add particle effect background
-function createParticles() {
-    const particlesContainer = document.createElement('div');
-    particlesContainer.className = 'particles';
-    particlesContainer.style.cssText = `
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-        z-index: -1;
-        overflow: hidden;
-    `;
-    
-    document.body.appendChild(particlesContainer);
-    
-    // Create particles
-    for (let i = 0; i < 50; i++) {
-        const particle = document.createElement('div');
-        particle.style.cssText = `
-            position: absolute;
-            width: 4px;
-            height: 4px;
-            background: rgba(255, 255, 255, 0.3);
-            border-radius: 50%;
-            animation: float ${3 + Math.random() * 4}s linear infinite;
-            left: ${Math.random() * 100}%;
-            top: ${Math.random() * 100}%;
-        `;
-        particlesContainer.appendChild(particle);
-    }
-    
-    // Add particle animation
-    const particleStyle = document.createElement('style');
-    particleStyle.textContent = `
-        @keyframes float {
-            0% {
-                transform: translateY(100vh) rotate(0deg);
-                opacity: 0;
-            }
-            10% {
-                opacity: 1;
-            }
-            90% {
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(-100px) rotate(360deg);
-                opacity: 0;
-            }
-        }
-    `;
-    document.head.appendChild(particleStyle);
-}
-
-// Initialize particles
-createParticles();
-
 // Add print functionality
 function addPrintButton() {
     const printBtn = document.createElement('button');
@@ -461,8 +387,7 @@ printStyle.textContent = `
         }
         
         .theme-toggle,
-        .print-btn,
-        .particles {
+        .print-btn {
             display: none !important;
         }
         
