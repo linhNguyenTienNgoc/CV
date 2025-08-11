@@ -67,10 +67,10 @@ logs
 *.log
 
 # Temporary files
-tmp/
-temp/
+*.tmp
+*.temp
 
-# Build outputs
+# Build directories
 dist/
 build/
 
