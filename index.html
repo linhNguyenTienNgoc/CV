@@ -3,258 +3,614 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nguyễn Tiến Ngọc Linh - CV</title>
+    <title>Nguyễn Tiến Ngọc Linh - Full Stack Developer</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <header class="header">
-            <div class="profile-section">
-                <div class="profile-image">
-                    <img src="https://via.placeholder.com/200x200/4A90E2/FFFFFF?text=NTNL" alt="Nguyễn Tiến Ngọc Linh">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <i class="fas fa-code"></i>
+                    <span>NTNL</span>
                 </div>
-                <div class="profile-info">
-                    <h1 class="name">Nguyễn Tiến Ngọc Linh</h1>
-                    <p class="title">Sinh viên APTECH - Lập trình viên</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                <div class="nav-links">
+                    <a href="#about" class="nav-link">Giới thiệu</a>
+                    <a href="#skills" class="nav-link">Kỹ năng</a>
+                    <a href="#projects" class="nav-link">Dự án</a>
+                    <a href="#experience" class="nav-link">Kinh nghiệm</a>
+                    <a href="#contact" class="nav-link">Liên hệ</a>
+                </div>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero" id="about">
+            <div class="hero-background">
+                <div class="hero-particles"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-left">
+                    <div class="hero-badge">
+                        <i class="fas fa-rocket"></i>
+                        <span>Available for opportunities</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="hero-greeting">Xin chào, tôi là</span>
+                        <span class="hero-name">Nguyễn Tiến Ngọc Linh</span>
+                        <span class="hero-role">Full Stack Developer</span>
+                    </h1>
+                    <p class="hero-description">
+                        Sinh viên APTECH với đam mê lập trình và sáng tạo. Chuyên về phát triển web full-stack, 
+                        mobile development và các công nghệ hiện đại. Luôn tìm tòi và học hỏi những công nghệ mới.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-eye"></i>
+                            Xem dự án
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-paper-plane"></i>
+                            Liên hệ
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Dự án hoàn thành</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Năm kinh nghiệm</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Công nghệ thành thạo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="hero-image-container">
+                        <div class="hero-image">
+                            <img src="https://via.placeholder.com/400x500/4F46E5/FFFFFF?text=NTNL" alt="Nguyễn Tiến Ngọc Linh">
+                        </div>
+                        <div class="hero-image-decoration">
+                            <div class="decoration-circle"></div>
+                            <div class="decoration-square"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </header>
+        </section>
 
-        <main class="main-content">
-            <div class="content-grid">
-                <div class="left-column">
-                    <section class="section contact-section">
-                        <h2 class="section-title">
-                            <i class="fas fa-address-card"></i>
-                            LIÊN HỆ
-                        </h2>
-                        <div class="contact-info">
-                            <div class="contact-item">
-                                <i class="fas fa-phone"></i>
-                                <span>0395024902</span>
+        <!-- Skills Section -->
+        <section class="skills-section" id="skills">
+            <div class="section-header">
+                <h2 class="section-title">Kỹ năng & Công nghệ</h2>
+                <p class="section-subtitle">Những công nghệ tôi sử dụng để biến ý tưởng thành hiện thực</p>
+            </div>
+            
+            <div class="skills-container">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Frontend Development</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="HTML5">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
                             </div>
-                            <div class="contact-item">
-                                <i class="fas fa-envelope"></i>
-                                <span>Ngtienlinh01@gmail.com</span>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Mỹ Hưng, Thanh Oai, Hà Nội</span>
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 95%"></div>
                             </div>
                         </div>
-                    </section>
-
-                    <section class="section skills-section">
-                        <h2 class="section-title">
-                            <i class="fas fa-code"></i>
-                            KỸ NĂNG LÀM VIỆC
-                        </h2>
-                        <div class="skills-grid">
-                            <div class="skill-category">
-                                <h3>Ngôn ngữ lập trình</h3>
-                                <div class="skill-tags">
-                                    <span class="skill-tag">C</span>
-                                    <span class="skill-tag">PHP</span>
-                                    <span class="skill-tag">Java</span>
-                                </div>
+                        <div class="skill-item" data-skill="CSS3">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
                             </div>
-                            <div class="skill-category">
-                                <h3>Công nghệ Web</h3>
-                                <div class="skill-tags">
-                                    <span class="skill-tag">HTML</span>
-                                    <span class="skill-tag">CSS</span>
-                                    <span class="skill-tag">ReactJS</span>
-                                    <span class="skill-tag">UI/UX</span>
-                                    <span class="skill-tag">XML/JSON</span>
-                                </div>
-                            </div>
-                            <div class="skill-category">
-                                <h3>Cơ sở dữ liệu</h3>
-                                <div class="skill-tags">
-                                    <span class="skill-tag">SQL</span>
-                                    <span class="skill-tag">MySQL</span>
-                                </div>
+                            <span class="skill-name">CSS3</span>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 90%"></div>
                             </div>
                         </div>
-                    </section>
-
-                    <section class="section soft-skills-section">
-                        <h2 class="section-title">
-                            <i class="fas fa-users"></i>
-                            KỸ NĂNG MỀM
-                        </h2>
-                        <div class="soft-skills">
-                            <div class="skill-item">
-                                <span class="skill-name">Làm việc nhóm</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 90%"></div>
-                                </div>
+                        <div class="skill-item" data-skill="ReactJS">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
                             </div>
-                            <div class="skill-item">
-                                <span class="skill-name">Quản lý thời gian</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 85%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">Học hỏi nhanh</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 95%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">Giao tiếp tốt</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 80%"></div>
-                                </div>
+                            <span class="skill-name">ReactJS</span>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 85%"></div>
                             </div>
                         </div>
-                    </section>
-
-                    <section class="section hobbies-section">
-                        <h2 class="section-title">
-                            <i class="fas fa-heart"></i>
-                            SỞ THÍCH
-                        </h2>
-                        <ul class="hobbies-list">
-                            <li>Tìm hiểu về công nghệ mới và lập trình</li>
-                            <li>Thích đọc sách</li>
-                            <li>Chơi game</li>
-                        </ul>
-                    </section>
+                        <div class="skill-item" data-skill="JavaScript">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="right-column">
-                    <section class="section objective-section">
-                        <h2 class="section-title">
-                            <i class="fas fa-bullseye"></i>
-                            MỤC TIÊU NGHỀ NGHIỆP
-                        </h2>
-                        <p class="objective-text">
-                            Sinh viên APTECH, mong muốn thực tập để áp dụng kiến thức lập trình (C, HTML, CSS, ReactJS, SQL, PHP, XML/JSON) vào thực tế, phát triển kỹ năng và đóng góp giá trị cho công ty.
-                        </p>
-                    </section>
-
-                    <section class="section education-section">
-                        <h2 class="section-title">
-                            <i class="fas fa-graduation-cap"></i>
-                            HỌC VẤN
-                        </h2>
-                        <div class="education-items">
-                            <div class="education-item">
-                                <div class="education-header">
-                                    <h3>APTECH Education</h3>
-                                    <span class="education-period">2023 - Hiện tại</span>
-                                </div>
-                                <p class="education-description">Trung tâm đào tạo lập trình viên</p>
-                                <div class="education-tags">
-                                    <span class="education-tag">Lập trình Web</span>
-                                    <span class="education-tag">Mobile Development</span>
-                                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend Development</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="PHP">
+                            <div class="skill-icon">
+                                <i class="fab fa-php"></i>
                             </div>
-                            <div class="education-item">
-                                <div class="education-header">
-                                    <h3>Đại học Công nghệ GTVT</h3>
-                                    <span class="education-period">2020 - 2024</span>
-                                </div>
-                                <p class="education-description">Chuyên ngành công nghệ ô tô</p>
-                                <div class="education-tags">
-                                    <span class="education-tag">Công nghệ ô tô</span>
-                                    <span class="education-tag">Kỹ thuật</span>
-                                </div>
+                            <span class="skill-name">PHP</span>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 88%"></div>
                             </div>
                         </div>
-                    </section>
-
-                    <section class="section projects-section">
-                        <h2 class="section-title">
-                            <i class="fas fa-project-diagram"></i>
-                            DỰ ÁN HỌC TẬP
-                        </h2>
-                        <div class="project-item">
-                            <div class="project-header">
-                                <h3>Trang thương mại điện tử</h3>
-                                <div class="project-tech">
-                                    <span class="tech-tag">PHP</span>
-                                    <span class="tech-tag">MySQL</span>
-                                    <span class="tech-tag">HTML</span>
-                                    <span class="tech-tag">CSS</span>
-                                </div>
+                        <div class="skill-item" data-skill="Java">
+                            <div class="skill-icon">
+                                <i class="fab fa-java"></i>
                             </div>
-                            <p class="project-description">
-                                Xây dựng website với chức năng hiển thị sản phẩm, giỏ hàng, quản lý đơn hàng.
-                            </p>
-                            <ul class="project-features">
-                                <li>Kết nối cơ sở dữ liệu MySQL để lưu trữ dữ liệu</li>
-                                <li>Giao diện người dùng thân thiện và responsive</li>
-                                <li>Hệ thống quản lý đơn hàng hoàn chỉnh</li>
-                            </ul>
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fab fa-github"></i> Xem code</a>
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <span class="skill-name">Java</span>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 82%"></div>
                             </div>
                         </div>
-                    </section>
-
-                    <section class="section experience-section">
-                        <h2 class="section-title">
-                            <i class="fas fa-briefcase"></i>
-                            KINH NGHIỆM LÀM VIỆC
-                        </h2>
-                        <div class="experience-items">
-                            <div class="experience-item">
-                                <div class="experience-header">
-                                    <h3>Nhân viên văn phòng</h3>
-                                    <span class="experience-period">2024</span>
-                                </div>
-                                <p class="company-name">Công ty MD Media</p>
-                                <ul class="experience-details">
-                                    <li>Quản lý tài liệu và hồ sơ</li>
-                                    <li>Hỗ trợ các hoạt động văn phòng</li>
-                                </ul>
+                        <div class="skill-item" data-skill="C">
+                            <div class="skill-icon">
+                                <i class="fas fa-microchip"></i>
                             </div>
-                            <div class="experience-item">
-                                <div class="experience-header">
-                                    <h3>Thực tập sinh</h3>
-                                    <span class="experience-period">2022 - 2023</span>
-                                </div>
-                                <p class="company-name">Gara ô tô Vương Mạnh</p>
-                                <ul class="experience-details">
-                                    <li>Hỗ trợ kỹ thuật viên trong việc bảo dưỡng xe</li>
-                                    <li>Học hỏi về công nghệ ô tô hiện đại</li>
-                                </ul>
+                            <span class="skill-name">C</span>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 85%"></div>
                             </div>
                         </div>
-                    </section>
+                    </div>
+                </div>
 
-                    <section class="section languages-section">
-                        <h2 class="section-title">
-                            <i class="fas fa-language"></i>
-                            NGOẠI NGỮ
-                        </h2>
-                        <div class="language-item">
-                            <span class="language-name">Tiếng Anh</span>
-                            <div class="language-level">
-                                <span class="level-text">Cơ bản (đọc hiểu tài liệu kỹ thuật)</span>
-                                <div class="language-bar">
-                                    <div class="language-progress" style="width: 70%"></div>
-                                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Database & Tools</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="MySQL">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 90%"></div>
                             </div>
                         </div>
-                    </section>
+                        <div class="skill-item" data-skill="SQL">
+                            <div class="skill-icon">
+                                <i class="fas fa-table"></i>
+                            </div>
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Git">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <span class="skill-name">Git</span>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </main>
 
+            <div class="soft-skills">
+                <h3>Kỹ năng mềm</h3>
+                <div class="soft-skills-grid">
+                    <div class="soft-skill-item">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="soft-skill-content">
+                            <h4>Làm việc nhóm</h4>
+                            <p>Khả năng hợp tác hiệu quả trong môi trường đa người</p>
+                        </div>
+                    </div>
+                    <div class="soft-skill-item">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="soft-skill-content">
+                            <h4>Quản lý thời gian</h4>
+                            <p>Hoàn thành dự án đúng hạn với chất lượng cao</p>
+                        </div>
+                    </div>
+                    <div class="soft-skill-item">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="soft-skill-content">
+                            <h4>Học hỏi nhanh</h4>
+                            <p>Thích ứng nhanh với công nghệ và môi trường mới</p>
+                        </div>
+                    </div>
+                    <div class="soft-skill-item">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="soft-skill-content">
+                            <h4>Giao tiếp tốt</h4>
+                            <p>Khả năng truyền đạt ý tưởng và giải thích kỹ thuật</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section" id="projects">
+            <div class="section-header">
+                <h2 class="section-title">Dự án nổi bật</h2>
+                <p class="section-subtitle">Những dự án thể hiện kỹ năng và đam mê lập trình của tôi</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- BronxLuggage Project -->
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <div class="project-badge">Featured</div>
+                        <h3 class="project-title">BronxLuggage - E-commerce Platform</h3>
+                        <p class="project-subtitle">Website thương mại điện tử hoàn chỉnh</p>
+                    </div>
+                    
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/1F2937/FFFFFF?text=BronxLuggage" alt="BronxLuggage Project">
+                    </div>
+                    
+                    <p class="project-description">
+                        Xây dựng website thương mại điện tử với đầy đủ chức năng từ hiển thị sản phẩm, 
+                        giỏ hàng, thanh toán đến quản lý đơn hàng và quản trị hệ thống.
+                    </p>
+                    
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">SCSS</span>
+                    </div>
+                    
+                    <div class="project-features">
+                        <h4>Tính năng chính:</h4>
+                        <ul>
+                            <li>Hệ thống quản lý sản phẩm và danh mục</li>
+                            <li>Giỏ hàng và thanh toán trực tuyến</li>
+                            <li>Quản lý đơn hàng và vận chuyển</li>
+                            <li>Hệ thống đăng nhập và phân quyền</li>
+                            <li>Giao diện responsive và thân thiện người dùng</li>
+                            <li>Quản trị hệ thống với dashboard</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/linhNguyenTienNgoc/BronxLuggage" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i>
+                            <span>Xem code</span>
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Live Demo</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project2 - Cafe Management -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Cafe Management System</h3>
+                        <p class="project-subtitle">Hệ thống quản lý quán cà phê</p>
+                    </div>
+                    
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/059669/FFFFFF?text=Cafe+Management" alt="Cafe Management Project">
+                    </div>
+                    
+                    <p class="project-description">
+                        Ứng dụng desktop JavaFX để quản lý toàn bộ hoạt động của quán cà phê, 
+                        từ đặt hàng, quản lý nhân viên đến báo cáo doanh thu.
+                    </p>
+                    
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">JavaFX</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Maven</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                    
+                    <div class="project-features">
+                        <h4>Tính năng chính:</h4>
+                        <ul>
+                            <li>Quản lý menu và sản phẩm</li>
+                            <li>Hệ thống đặt hàng và thanh toán</li>
+                            <li>Quản lý nhân viên và phân quyền</li>
+                            <li>Báo cáo doanh thu và thống kê</li>
+                            <li>Giao diện người dùng thân thiện</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/linhNguyenTienNgoc/Project2" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i>
+                            <span>Xem code</span>
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-download"></i>
+                            <span>Download</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Additional Project -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Personal Portfolio</h3>
+                        <p class="project-subtitle">Website giới thiệu cá nhân</p>
+                    </div>
+                    
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/7C3AED/FFFFFF?text=Portfolio" alt="Portfolio Project">
+                    </div>
+                    
+                    <p class="project-description">
+                        Website portfolio cá nhân với thiết kế hiện đại, responsive và các hiệu ứng tương tác. 
+                        Sử dụng HTML5, CSS3 và JavaScript thuần.
+                    </p>
+                    
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Responsive</span>
+                    </div>
+                    
+                    <div class="project-features">
+                        <h4>Tính năng chính:</h4>
+                        <ul>
+                            <li>Thiết kế responsive và modern</li>
+                            <li>Hiệu ứng animation mượt mà</li>
+                            <li>Tối ưu hóa SEO</li>
+                            <li>Tương thích đa trình duyệt</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i>
+                            <span>Xem code</span>
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Live Demo</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience-section" id="experience">
+            <div class="section-header">
+                <h2 class="section-title">Kinh nghiệm & Học vấn</h2>
+                <p class="section-subtitle">Hành trình phát triển và học tập của tôi</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>APTECH Education</h3>
+                            <span class="timeline-period">2023 - Hiện tại</span>
+                        </div>
+                        <p class="timeline-role">Sinh viên lập trình</p>
+                        <p class="timeline-description">
+                            Đang theo học chương trình đào tạo lập trình viên chuyên nghiệp, 
+                            tập trung vào phát triển web full-stack và mobile development.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="timeline-tag">Web Development</span>
+                            <span class="timeline-tag">Mobile Development</span>
+                            <span class="timeline-tag">Full Stack</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>MD Media Company</h3>
+                            <span class="timeline-period">2024</span>
+                        </div>
+                        <p class="timeline-role">Nhân viên văn phòng</p>
+                        <p class="timeline-description">
+                            Quản lý tài liệu, hồ sơ và hỗ trợ các hoạt động văn phòng. 
+                            Phát triển kỹ năng tổ chức và quản lý thời gian.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="timeline-tag">Quản lý tài liệu</span>
+                            <span class="timeline-tag">Tổ chức</span>
+                            <span class="timeline-tag">Giao tiếp</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Đại học Công nghệ GTVT</h3>
+                            <span class="timeline-period">2020 - 2024</span>
+                        </div>
+                        <p class="timeline-role">Sinh viên kỹ thuật</p>
+                        <p class="timeline-description">
+                            Tốt nghiệp chuyên ngành công nghệ ô tô. Phát triển tư duy kỹ thuật, 
+                            khả năng phân tích và giải quyết vấn đề.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="timeline-tag">Công nghệ ô tô</span>
+                            <span class="timeline-tag">Kỹ thuật</span>
+                            <span class="timeline-tag">Phân tích</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Gara ô tô Vương Mạnh</h3>
+                            <span class="timeline-period">2022 - 2023</span>
+                        </div>
+                        <p class="timeline-role">Thực tập sinh</p>
+                        <p class="timeline-description">
+                            Hỗ trợ kỹ thuật viên trong việc bảo dưỡng và sửa chữa xe. 
+                            Học hỏi về công nghệ ô tô hiện đại và quy trình làm việc.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="timeline-tag">Kỹ thuật</span>
+                            <span class="timeline-tag">Bảo dưỡng</span>
+                            <span class="timeline-tag">Thực hành</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="section-header">
+                <h2 class="section-title">Liên hệ & Kết nối</h2>
+                <p class="section-subtitle">Hãy để chúng ta cùng tạo ra những điều tuyệt vời</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Điện thoại</h4>
+                            <p>0395024902</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>Ngtienlinh01@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Địa chỉ</h4>
+                            <p>Mỹ Hưng, Thanh Oai, Hà Nội</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                            <p>linhNguyenTienNgoc</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Gửi tin nhắn</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Họ và tên" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Tiêu đề" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Nội dung tin nhắn" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Gửi tin nhắn
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
         <footer class="footer">
-            <p>&copy; 2024 Nguyễn Tiến Ngọc Linh. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Nguyễn Tiến Ngọc Linh</h3>
+                    <p>Full Stack Developer với đam mê sáng tạo và học hỏi</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên kết nhanh</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">Giới thiệu</a></li>
+                        <li><a href="#skills">Kỹ năng</a></li>
+                        <li><a href="#projects">Dự án</a></li>
+                        <li><a href="#contact">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kết nối</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/linhNguyenTienNgoc" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nguyễn Tiến Ngọc Linh. All rights reserved.</p>
+            </div>
         </footer>
     </div>
 
